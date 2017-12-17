@@ -20,3 +20,19 @@ var myColor = ["Red", "Green", "White", "Black"];
 console.log(myColor.join(" + "));
 
 //EXERCISE 4
+var number = prompt('Please enter any number');
+var string = number.toString();
+var result = [string[0]];
+  
+for(var i = 1; i < string.length; i++)
+  {
+    if((string[i-1]%2 === 0)&&(string[i]%2 === 0))
+     {
+      result.push('-', string[i]);
+     }
+    else
+     {
+      result.push(string[i]);
+     }
+  }
+console.log(result.join(''));
